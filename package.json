@@ -1,0 +1,21 @@
+{
+	"name": "node-red-contrib-jar-func",
+	"version": "0.0.4",
+	"description": "a function node that calls an executable .jar file.",
+	"node-red": {
+		"nodes": {
+			"jar-func": "jar-func.js"
+		}
+	},
+	"keywords": [
+		"node-red",
+		"function",
+		"jar",
+		"java",
+		"kotlin",
+		"scala",
+		"jvm-based"
+	],
+	"author": "jeffszh",
+	"license": "Apache-2.0"
+}

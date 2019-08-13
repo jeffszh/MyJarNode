@@ -1,0 +1,36 @@
+<script type="text/javascript">
+	RED.nodes.registerType('jar-func', {
+		category: 'function',
+		color: '#00bbff',
+		defaults: {
+			name: {value: "JarFunc"},
+			jar: {value: ""},
+		},
+		inputs: 1,
+		outputs: 1,
+		icon: "function.png",
+		label: function () {
+			return this.name || "jar-func";
+		}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="jar-func">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+	<div class="form-row">
+		<label for="node-input-name"><i class="icon-tag"></i> Jar </label>
+		<input type="text" id="node-input-jar" placeholder="Jar">
+	</div>
+</script>
+
+<script type="text/x-red" data-help-name="jar-func">
+	<p>运行Jar程序</p>
+	<h3>References</h3>
+	<ul>
+		<li><a href="https://www.npmjs.com/package/node-red-contrib-jar-func">
+		node-red-contrib-jar-func README</a></li>
+	</ul>
+</script>
